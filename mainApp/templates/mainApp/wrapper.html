@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="shortcut icon" href="{% static 'mainApp/icons/favicon.ico' %}" type="image/x-icon">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="{% static 'mainApp/vendor/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'mainApp/css/ekko-lightbox.css' %}">
+
+    <!-- Custom fonts for this template -->
+    <link rel="stylesheet" href="{% static 'mainApp/vendor/fontawesome-free/css/all.min.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Kalam|Roboto&display=swap" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="{% static 'mainApp/css/grayscale.css' %}">
+    <link rel="stylesheet" href="{% static 'mainApp/css/style.css' %}">
+
+    {% block title %}
+    {% endblock %}
+</head>
+<body id="top">
+<script src="//simplybook.it/v2/widget/widget.js"></script>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="/#top"><img id="brandImg" height="60px"> Маникюр Nails
+            Politos</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+            Меню
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#prices">Прайс-лист</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#about">Обо мне</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#contact">Контакты</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="/works#gallery">Мои работы</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="https://www.instagram.com/nails_po_li_tos/"
+                       target="_blank"><i
+                            class="fab fa-instagram"></i> Instagram</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Reservation Modal -->
+<div class="modal fade" id="reserveModal" tabindex="-1" role="dialog" aria-labelledby="reserveModalTitle"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Запись на маникюр</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <script>var widget = new SimplybookWidget({
+                    "widget_type": "iframe",
+                    "url": "https:\/\/nailspolitos.simplybook.it",
+                    "theme": "minimal",
+                    "theme_settings": {
+                        "timeline_show_end_time": "0",
+                        "timeline_modern_display": "as_slots",
+                        "hide_company_label": "1",
+                        "sb_base_color": "#e49092",
+                        "btn_color_1": "#f5a778,#e6938f,#e28c96",
+                        "link_color": "#e49092",
+                        "display_item_mode": "list",
+                        "body_bg_color": "#ffffff",
+                        "dark_font_color": "#2b212b",
+                        "light_font_color": "#ffffff",
+                        "sb_company_label_color": "#e49092",
+                        "hide_img_mode": "1",
+                        "sb_busy": "#aaa6aa",
+                        "sb_available": "#2b212b"
+                    },
+                    "timeline": "modern_week",
+                    "datepicker": "top_calendar",
+                    "is_rtl": false,
+                    "app_config": {"predefined": {"provider": "1", "service": "1"}}
+                });</script>
+            </div>
+            <div class="modal-footer">
+                <p style="color: black; font-size: small; padding: 0 1rem">Если у вас не получается записаться онлайн
+                    через
+                    сервис, представленный выше, то свяжитесь напрямую со
+                    мной через <a href="https://www.instagram.com/nails_po_li_tos/" target="_blank">instagram</a> или по
+                    телефону
+                    <a href="tel: 79082100623">+7(908)210-06-23<a/></p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Header -->
+<header class="masthead">
+    <div class="container d-flex h-100 align-items-center">
+        <div class="mx-auto text-center">
+            <h1 class="mx-auto my-0 text-uppercase">Nails Politos</h1>
+            <h2 class="text-white mx-auto mt-2 mb-5">Качественный маникюр выглядит превосходно, придает ухоженный и
+                эстетичный вид рукам, а также делает представительницу прекрасного пола более уверенной в себе.</h2>
+            <button type="button" class="btn btn-primary js-scroll-trigger" data-toggle="modal"
+                    data-target="#reserveModal">Записаться
+            </button>
+        </div>
+    </div>
+</header>
+{% block content %}
+{% endblock %}
+
+<!-- Contact Section -->
+<section class="contact-section bg-pink-grad">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-3 mb-md-0">
+                <div class="card py-4 h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                        <h4 class="text-uppercase m-0">Адрес</h4>
+                        <hr class="my-4">
+                        <div class="small text-black-50">г. Красноярск, ул. Свердловская, д. 43</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-3 mb-md-0">
+                <div class="card py-4 h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-envelope text-primary mb-2"></i>
+                        <h4 class="text-uppercase m-0">Email</h4>
+                        <hr class="my-4">
+                        <div class="small text-black-50">
+                            <a href="mailto:Politos250900@mail.ru">Politos250900@mail.ru</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-3 mb-md-0">
+                <div class="card py-4 h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                        <h4 class="text-uppercase m-0">Телефон</h4>
+                        <hr class="my-4">
+                        <div class="small text-black-50"><a href="tel: 79082100623">+7 (908) 210-06-23</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="social d-flex justify-content-center">
+            <a href="https://vk.com/id252344156" class="mx-2" target="_blank">
+                <i class="fab fa-vk"></i>
+            </a>
+            <a href="https://www.instagram.com/nails_po_li_tos/" class="mx-2" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-white small text-center text-black">
+    <div class="container">
+        <img src="{% static '/mainApp/image/colors.png' %}" class="w-50">
+        <p class="pt-3">&copy; nailspolitos.ru, 2020 | Все права защищены </p>
+        <p>Создание, поддержка и продвижение сайта - <a href="https://vk.com/qldanil" target="_blank">Захаренко
+            Данил</a></p>
+    </div>
+</footer>
+
+<!-- Bootstrap core JavaScript -->
+<script src="{% static 'mainApp/vendor/jquery/jquery.min.js' %}"></script>
+<script src="{% static 'mainApp/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'mainApp/js/ekko-lightbox.js' %}"></script>
+
+<!-- Plugin JavaScript -->
+<script src="{% static 'mainApp/vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+
+<!-- Custom scripts for this template -->
+<script src="{% static 'mainApp/js/grayscale.js' %}"></script>
+<script src="{% static 'mainApp/js/script.js' %}"></script>
+
+<!-- Google maps -->
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEpiVMW9Y6Iwzh8LFtNejKkhtn7oBPJ0E&callback=initMap"
+        type="text/javascript"></script>
+<script>
+    $(document).on('click', '[data-toggle="lightbox"]', function (event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
+    });
+</script>
+</body>
+</html>

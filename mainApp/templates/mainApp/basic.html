@@ -1,0 +1,9 @@
+{% extends "mainApp/wrapper.html" %}
+      {% block title %}
+          <title>Контакты</title>
+      {% endblock %}
+    {% block content %}
+        {% for val in values %}
+            <p>{{ val }}</p>
+        {% endfor %}
+    {% endblock %}
