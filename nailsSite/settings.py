@@ -23,12 +23,11 @@ MEDIA_URL = '/media/'
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = '^!##%5(yu2$-t8msymctr-*t9z6l&_%)vnid0fyo_zebs&98g5'
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', '^!##%5(yu2$-t8msymctr-*t9z6l&_%)vnid0fyo_zebs&98g5')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = False
 DEBUG = bool(os.environ.get('DJANGO_DEBUG', True))
+
 ALLOWED_HOSTS = [
 	'nailspolitos.herokuapp.com',
 ]
@@ -136,4 +135,4 @@ DATABASES['default'].update(db_from_env)
 
 # Simplified static file serving.
 # https://warehouse.python.org/project/whitenoise/
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
