@@ -112,7 +112,7 @@ USE_TZ = True
 
 
 # The URL to use when referring to static files (where they will be served from)
-AWS_DEFAULT_ACL = None
+AWS_DEFAULT_ACL = 'public-read'
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID', '')
@@ -124,7 +124,6 @@ AWS_S3_CUSTOM_DOMAIN = AWS_STORAGE_BUCKET_NAME + '.s3.amazonaws.com'
 STATIC_URL = 'https://' + AWS_STORAGE_BUCKET_NAME + '.s3.amazonaws.com/' + 'static/'
 MEDIA_URL = 'https://' + AWS_STORAGE_BUCKET_NAME + '.s3.amazonaws.com/' + 'media/'
 STATICFILES_DIRS = ( os.path.join(BASE_DIR, 'mainApp/static'), )
-STATIC_ROOT = 'staticfiles'
 ADMIN_MEDIA_PREFIX = STATIC_URL + 'admin/'
 STATICFILES_FINDERS = (
 'django.contrib.staticfiles.finders.FileSystemFinder',
