@@ -14,13 +14,13 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <div><img src="{% static '/mainApp/image/Nails1.png' %}" class="d-block w-100"></div>
+                    <div><img src="{% static '/mainApp/image/Nails1.png' %}" class="d-block w-100" alt="Фото маникюра 1"></div>
                 </div>
                 <div class="carousel-item">
-                    <div><img src="{% static '/mainApp/image/Nails2.png' %}" class="d-block w-100"></div>
+                    <div><img src="{% static '/mainApp/image/Nails2.png' %}" class="d-block w-100" alt="Фото маникюра 2"></div>
                 </div>
                 <div class="carousel-item">
-                    <div><img src="{% static '/mainApp/image/Nails3.png' %}" class="d-block w-100"></div>
+                    <div><img src="{% static '/mainApp/image/Nails3.png' %}" class="d-block w-100" alt="Фото маникюра 3"></div>
                 </div>
             </div>
             <a href="#carouselNailsIndicators" class="carousel-control-prev" role="button" data-slide="prev">
@@ -44,7 +44,7 @@
                             <div id="price-card"
                                  class="d-flex flex-column col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 py-4">
                                 <div class="card text-center bg-light">
-                                    <img src={{ service.photo.url }} alt={{ service.title }} class="card-img-top">
+                                    <img src={{ service.photo.url }} alt={{ service.title }} class="card-img-top" alt="Фото сервиса">
                                     <div class="card-body">
                                         <p class="card-title">{{ service.title }}</p>
                                         <p class="card-text text-success">{{ service.description }}</p>
@@ -67,7 +67,7 @@
             <div class="row align-items-center no-gutters mb-4 mb-lg-5">
                 <div class="col-xl-8 col-lg-7">
                     <a href="https://www.instagram.com/p/B7DtPxvBMUT/" data-toggle="lightbox"><img
-                            class="img-fluid mb-3 mb-lg-0" src="{% static '/mainApp/image/Polina.jpg' %}"></a>
+                            class="img-fluid mb-3 mb-lg-0" src="{% static '/mainApp/image/Polina.jpg' %}" alt="Фото Полины"></a>
                 </div>
                 <div class="col-xl-4 col-lg-5">
                     <div class="featured-text text-center text-lg-left">
