@@ -16,6 +16,8 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', '^!##%5(yu2$-t8msymctr-*t9z6l&_
 DEBUG = bool(os.environ.get('DJANGO_DEBUG', True))
 
 ALLOWED_HOSTS = [
+	'www.nailspolitos.ru',
+	'nailspolitos.ru',
 	'nailspolitos.herokuapp.com',
 	'127.0.0.1'
 ]
