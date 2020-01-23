@@ -5,12 +5,14 @@
     <!-- Search engine -->
 	<meta name="google-site-verification" content="oIYbyZ8mFRXJSrQBXn2vOQo5TYi8Gae3xYPte5Rsz4w" />
 	<meta name="yandex-verification" content="879acae18d19a6a1" />
+	{% block description %}
+    {% endblock %}
 	
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <link rel="shortcut icon" href="{% static 'mainApp/icons/favicon.ico' %}" type="image/x-icon">
-
+    
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="{% static 'mainApp/vendor/bootstrap/css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'mainApp/css/ekko-lightbox.css' %}">
