@@ -23,7 +23,7 @@
 
     <!-- Custom styles for this template -->
     <link rel="stylesheet" href="{% static 'mainApp/css/style.css' %}">
-
+	<link rel="stylesheet" href="{% static 'mainApp/css/grayscale.css' %}">
     {% block title %}
     {% endblock %}
 </head>
@@ -205,8 +205,8 @@
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEpiVMW9Y6Iwzh8LFtNejKkhtn7oBPJ0E&callback=initMap"
         type="text/javascript"></script>
+		
 <script>
-
     $(document).on('click', '[data-toggle="lightbox"]', function (event) {
         event.preventDefault();
         $(this).ekkoLightbox();
