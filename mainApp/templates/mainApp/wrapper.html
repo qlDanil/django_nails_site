@@ -22,7 +22,6 @@
     <link href="https://fonts.googleapis.com/css?family=Comfortaa|Kalam|Roboto&display=swap" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link rel="stylesheet" href="{% static 'mainApp/css/grayscale.css' %}">
     <link rel="stylesheet" href="{% static 'mainApp/css/style.css' %}">
 
     {% block title %}
@@ -190,6 +189,9 @@
     </div>
 </footer>
 
+<!-- Custom scripts for this template -->
+<script src="{% static 'mainApp/js/script.js' %}"></script>
+
 <!-- Bootstrap core JavaScript -->
 <script src="{% static 'mainApp/vendor/jquery/jquery.min.js' %}"></script>
 <script src="{% static 'mainApp/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
@@ -198,19 +200,17 @@
 <!-- Plugin JavaScript -->
 <script src="{% static 'mainApp/vendor/jquery-easing/jquery.easing.min.js' %}"></script>
 
-<!-- Custom scripts for this template -->
-<script src="{% static 'mainApp/js/grayscale.js' %}"></script>
-<script src="{% static 'mainApp/js/script.js' %}"></script>
-
 <!-- Google maps -->
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEpiVMW9Y6Iwzh8LFtNejKkhtn7oBPJ0E&callback=initMap"
         type="text/javascript"></script>
 <script>
+
     $(document).on('click', '[data-toggle="lightbox"]', function (event) {
         event.preventDefault();
         $(this).ekkoLightbox();
     });
 </script>
+
 </body>
 </html>
